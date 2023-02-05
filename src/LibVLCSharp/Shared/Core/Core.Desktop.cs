@@ -45,17 +45,6 @@ namespace LibVLCSharp.Shared
         }
 
         /// <summary>
-        /// Initializes the X threading system
-        /// <para/> This will throw a <see cref="DllNotFoundException"/> if the native libx11 libraries cannot be found or loaded.
-        /// </summary>
-        /// <remarks>Linux X11 only</remarks>
-        /// <returns>non-zero on success, zero on failure</returns>
-        public static int XInitThreads()
-        {
-            return Native.XInitThreads();
-        }
-
-        /// <summary>
         /// Disable error dialogs in case of dll loading failures on older Windows versions.
         /// <para/>
         /// This is mostly to fix Windows XP support (https://code.videolan.org/videolan/LibVLCSharp/issues/173),
